@@ -46,6 +46,8 @@ var StateGenerator = yeoman.generators.Base.extend({
 
         var baseStates = [];
         var stateDict = {};
+        console.log("hello world!");
+        console.log(process.cwd());
         var states = this.readFileAsString("states.md")
         var split = states.split("\n");
         var i;
