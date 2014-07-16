@@ -1,6 +1,6 @@
 {
   "name": "generator-eggheadio",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "state/index.js",
@@ -17,7 +17,7 @@
     "test": "mocha"
   },
   "files": [
-    "app"
+    "state"
   ],
   "keywords": [
     "yeoman-generator"
