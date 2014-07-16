@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "Yeoman generator",
   "license": "MIT",
-  "main": "app/index.js",
+  "main": "state/index.js",
   "repository": "johnlindquist/generator-eggheadio",
   "author": {
     "name": "",
@@ -23,14 +23,13 @@
     "yeoman-generator"
   ],
   "dependencies": {
-    "yeoman-generator": "~0.16.0",
-    "chalk": "~0.4.0",
-    "yosay": "^0.1.0"
-  },
-  "devDependencies": {
-    "mocha": "*",
+    "yeoman-generator": "~0.17.1",
+    "chalk": "~0.5.1",
+    "yosay": "~0.3.0",
     "lodash": "~2.4.1",
     "underscore.string": "~2.3.3"
+  },
+  "devDependencies": {
   },
   "peerDependencies": {
     "yo": ">=1.0.0"
