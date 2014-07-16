@@ -1,0 +1,17 @@
+angular.module("<%= appName %>", ["ui.router", "ui.bootstrap"<%= appDeps %>])
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider.state("<%= appName %>", {
+            url:"",
+            templateUrl:"<%= appName %>/<%= appName %>.html",
+            controller:"<%= upAppName %>Ctrl as <%= appName %>"
+
+        })
+
+        $urlRouterProvider.otherwise("");
+    })
+
+    .controller("<%= upAppName %>Ctrl", function () {
+        var <%= appName %> = this;
+
+        <%= appName %>.message = "Welcome to the <%= appName %> state."
+    })

@@ -1,0 +1,1 @@
+Generators to *demonstrate* application structure. Not for use in production apps.

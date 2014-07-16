@@ -1,0 +1,14 @@
+angular.module("<%= stateName %>", [<%= deps %>])
+    .config(function ($stateProvider) {
+        $stateProvider.state("<%= stateName %>", {
+            url:"/<%= itemName %>",
+            templateUrl:"<%= statePath %>/<%= stateName %>.html",
+            controller: "<%= upperStateName %>Ctrl as <%= itemName %>"
+        })
+    })
+
+    .controller("<%= upperStateName %>Ctrl", function () {
+        var <%= itemName %> = this;
+
+        <%= itemName %>.message = "<%= stateName %>"
+    })

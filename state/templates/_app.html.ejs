@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="btn-group">
+    <% for(var i=0; i<baseStates.length; i++) {%>
+    <label ui-sref="<%= baseStates[i] %>" class="btn" ng-model="<%= appName %>.radioModel" btn-radio="'<%= baseStates[i] %>'" uncheckable><%= baseStates[i] %></label><% } %>
+  </div>
+  <h2>Your Application</h2>
+  <div ui-view></div>
+</div>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <script src="bower_components/lodash/dist/lodash.js"></script>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <% for(var i=0; i<scripts.length; i++) {%><script src="<%= scripts[i] %>"></script>
+  <% } %>
+  <script src="<%= appName %>/<%= appName %>.js"></script>
+</head>
+<body ng-app="<%= appName %>">
+<div class="container">
+  <div ui-view></div>
+</div>
+</body>
+</html>
+
