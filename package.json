@@ -24,7 +24,7 @@
   ],
   "dependencies": {
     "yeoman-generator": "~0.17.1",
-    "chalk": "~0.5.1",
+    "chalk": "~1.0.0",
     "yosay": "~0.3.0",
     "lodash": "~2.4.1",
     "underscore.string": "~2.3.3"
